@@ -1,62 +1,117 @@
-    /**** R E S E T  start****/
+/**** R E S E T  start****/
 *:where(:not(iframe, canvas, img, svg, video):not(svg *, symbol *)) {
-all: unset;
-display: revert;
+  all: unset;
+  display: revert;
 }
 *,
 *::before,
 *::after {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
-a, button {
-cursor: revert;
+a,
+button {
+  cursor: revert;
 }
-ol, ul, menu {
-list-style: none;
+ol,
+ul,
+menu {
+  list-style: none;
 }
 img {
-max-width: 100%;
+  max-width: 100%;
 }
 table {
-border-collapse: collapse;
+  border-collapse: collapse;
 }
 textarea {
-white-space: revert;
+  white-space: revert;
 }
 meter {
--webkit-appearance: revert;
-appearance: revert;
+  -webkit-appearance: revert;
+  appearance: revert;
 }
 ::placeholder {
-color: unset;
+  color: unset;
 }
 :where([hidden]) {
-display: none;
+  display: none;
 }
 :where([contenteditable]) {
--moz-user-modify: read-write;
--webkit-user-modify: read-write;
-overflow-wrap: break-word;
--webkit-line-break: after-white-space;
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
 }
-:where([draggable=
-true
-]) {
--webkit-user-drag: element;
+:where([draggable="true"]) {
+  -webkit-user-drag: element;
 }
-    /**** R E S E T  end****/
+/**** R E S E T  end****/
 
-body{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    /* regular 400, extrabold 900, light italic 300 */
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  /* regular 400, extrabold 900, light italic 300 */
 }
 
-        /* HEADER */
+/* HEADER */
 
-header{
-    background-color: hsl(215, 28%, 17%);
+header {
+  background-color: hsl(215, 28%, 17%);
+  color: hsl(90, 17%, 98%);
+  display: flex;
+  justify-content: center;
 }
-nav{
+.container{
+    max-width: 1100px;
+}
+.main{
     display: flex;
+    gap: 3em;
+    margin: 5em 0em;
+    align-items: center;
+}
+
+/* NAV */
+
+nav {
+  display: flex;
+  margin-top: 1em;
+}
+.nav-links {
+  margin-left: auto;
+}
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+ul {
+  display: flex;
+}
+li {
+  margin-left: 2em;
+  color: hsl(228, 11%, 91%);
+  font-size: 18px;
+}
+
+/* HERO */
+h1 {
+  font-size: 48px;
+  font-weight: 900;
+  margin: 8px 0px;
+}
+header p {
+  color: hsl(228, 11%, 91%);
+  font-size: 18px;
+}
+.main-img{
+    flex: 1 0 auto;
+}
+.main-img img{
+    border-radius: 1em;
+}
+header button{
+    padding: 10px;
+    background-color: hsl(217, 91%, 59%);
+    border-radius: 0.5em;
+    margin: 8px 0px;
 }
