@@ -55,20 +55,21 @@ body {
 
 /* HEADER */
 
-header {
+header,
+footer {
   background-color: hsl(215, 28%, 17%);
   color: hsl(90, 17%, 98%);
   display: flex;
   justify-content: center;
 }
-.container{
-    max-width: 1100px;
+.container {
+  width: 1100px;
 }
-.main{
-    display: flex;
-    gap: 3em;
-    margin: 5em 0em;
-    align-items: center;
+.main {
+  display: flex;
+  gap: 3em;
+  margin: 5em 0em;
+  align-items: center;
 }
 
 /* NAV */
@@ -103,48 +104,99 @@ header p {
   color: hsl(228, 11%, 91%);
   font-size: 18px;
 }
-.main-img{
-    flex: 1 0 auto;
+.main-img {
+  flex: 1 0 auto;
 }
-.main-img img{
-    border-radius: 1em;
+.main-img img {
+  border-radius: 1em;
 }
-header button{
-    padding: 10px;
-    background-color: hsl(217, 91%, 59%);
-    border-radius: 0.5em;
-    margin: 8px 0px;
+header button {
+  padding: 10px;
+  background-color: hsl(217, 91%, 59%);
+  border-radius: 0.5em;
+  margin: 8px 0px;
 }
 
 /* section info */
-.info{
-    display: flex;
-    justify-content: center;
+.info {
+  display: flex;
+  justify-content: center;
 }
-h2{
-    font-size: 36px;
-    font-weight: 900;
-    color: hsl(215, 28%, 17%);
-    text-align: center;
-    margin: 1em 0em;
+h2 {
+  font-size: 36px;
+  font-weight: 900;
+  color: hsl(215, 28%, 17%);
+  text-align: center;
+  margin: 1em 0em;
 }
-.info-img{
-    display: flex;
+.info-img {
+  display: flex;
 }
-.card{
-    text-align: center;
-    font-size: 18px;
+.card {
+  text-align: center;
+  font-size: 18px;
 }
-.card a{
-    color: blueviolet;
+.card a {
+  color: blueviolet;
 }
-.card img{
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 0.5em;
-    margin: 0.5em 2em;
+.card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.5em;
+  margin: 0.5em 2em;
 }
 
 /* QUOTE SECTION */
 
+.quote {
+  background-color: hsl(220, 13%, 91%);
+  display: flex;
+  justify-content: center;
+}
+.phrase {
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+  padding: 4em 3em 0em 3em;
+  color: hsl(215, 28%, 17%);
+  text-align: center;
+}
+.phrase p {
+  margin-bottom: 1em;
+}
+.author {
+  text-align: end;
+  padding-bottom: 3em;
+}
+
+/* SECTION SIGNUP */
+
+.signup {
+  display: flex;
+  justify-content: center;
+}
+.sign-info {
+  background-color: #3882f6;
+  padding: 2em;
+  display: flex;
+  border-radius: 1em;
+  margin: 5em 0em;
+  justify-content: space-around;
+}
+.sign-info h3 {
+  color: hsl(90, 17%, 98%);
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 0.2em;
+}
+.sign-info p{
+    font-size: 16px;
+    color: hsl(220, 13%, 91%);
+}
+.sign-info button{
+    color: hsl(90, 17%, 98%);
+    border: 2px solid hsl(90, 17%, 98%);
+    border-radius: 0.5em;
+    padding: 0.5em 1.5em;
+}
