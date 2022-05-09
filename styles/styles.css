@@ -57,8 +57,9 @@ body {
 
 header,
 footer {
-  background-color: hsl(215, 28%, 17%);
-  color: hsl(90, 17%, 98%);
+  /* background-color: hsl(294, 95%, 8%); */
+  background: linear-gradient(hsl(0, 0%, 12%), hsl(294, 95%, 8%));
+  color: hsl(344, 96%, 48%);
   display: flex;
   justify-content: center;
 }
@@ -68,7 +69,7 @@ footer {
 .main {
   display: flex;
   gap: 3em;
-  margin: 5em 0em;
+  margin: 8em 0em;
   align-items: center;
 }
 
@@ -90,8 +91,13 @@ ul {
 }
 li {
   margin-left: 2em;
-  color: hsl(228, 11%, 91%);
+  color: hsl(50, 96%, 48%);
   font-size: 18px;
+}
+li:hover{
+    padding-bottom: 5px;
+    border-bottom: 1px solid hsl(50, 96%, 48%);
+    transition: ease-in-out;
 }
 
 /* HERO */
@@ -101,7 +107,7 @@ h1 {
   margin: 8px 0px;
 }
 header p {
-  color: hsl(228, 11%, 91%);
+  color: hsl(220, 33%, 98%, 0.7);
   font-size: 18px;
 }
 .main-img {
@@ -109,25 +115,28 @@ header p {
 }
 .main-img img {
   border-radius: 1em;
+  box-shadow: 0px 12px 15px 0px rgba(0, 0, 0, 0.5);
 }
 header button {
   padding: 10px;
-  background-color: hsl(217, 91%, 59%);
+  background-color: hsl(50, 96%, 48%);
   border-radius: 0.5em;
-  margin: 8px 0px;
+  margin: 2em 0px;
 }
 
 /* section info */
 .info {
   display: flex;
   justify-content: center;
+  padding: 10em 0em;
+  background: linear-gradient(hsl(0, 0%, 8%), rgb(21, 1, 24));
 }
 h2 {
   font-size: 36px;
   font-weight: 900;
-  color: hsl(215, 28%, 17%);
+  color: hsl(270, 96%, 48%);
   text-align: center;
-  margin: 1em 0em;
+  margin-bottom: 1em;
 }
 .info-img {
   display: flex;
@@ -135,9 +144,10 @@ h2 {
 .card {
   text-align: center;
   font-size: 18px;
+  color: hsl(220, 33%, 98%, 0.7);
 }
 .card a {
-  color: blueviolet;
+  color: hsl(50, 96%, 48%);
 }
 .card img {
   width: 200px;
@@ -145,12 +155,14 @@ h2 {
   object-fit: cover;
   border-radius: 0.5em;
   margin: 0.5em 2em;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+  border: 4px solid hsl(270, 96%, 48%);
 }
 
 /* QUOTE SECTION */
 
 .quote {
-  background-color: hsl(220, 13%, 91%);
+  background-color: hsl(294, 95%, 8%);
   display: flex;
   justify-content: center;
 }
@@ -158,16 +170,19 @@ h2 {
   font-size: 16px;
   font-weight: 300;
   font-style: italic;
-  padding: 4em 3em 0em 3em;
+  padding: 5em 3em 0em 3em;
   color: hsl(215, 28%, 17%);
   text-align: center;
 }
 .phrase p {
   margin-bottom: 1em;
+  color: hsl(220, 33%, 98%, 0.7);
 }
 .author {
   text-align: end;
-  padding-bottom: 3em;
+  padding-bottom: 5em;
+  margin-right: 12em;
+  color: hsl(344, 96%, 48%);
 }
 
 /* SECTION SIGNUP */
@@ -175,28 +190,36 @@ h2 {
 .signup {
   display: flex;
   justify-content: center;
+  background-color: hsl(0, 0%, 100%);
 }
 .sign-info {
-  background-color: #3882f6;
-  padding: 2em;
+  background-color: hsl(294, 95%, 8%);
+  padding: 4em;
   display: flex;
   border-radius: 1em;
-  margin: 5em 0em;
+  margin: 10em 0em;
   justify-content: space-around;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
 }
 .sign-info h3 {
-  color: hsl(90, 17%, 98%);
+  color: hsl(0, 0%, 100%);
   font-size: 24px;
   font-weight: 900;
   margin-bottom: 0.2em;
 }
-.sign-info p{
-    font-size: 16px;
-    color: hsl(220, 13%, 91%);
+.sign-info p {
+  font-size: 16px;
+  color: hsl(220, 13%, 91%);
 }
-.sign-info button{
-    color: hsl(90, 17%, 98%);
-    border: 2px solid hsl(90, 17%, 98%);
-    border-radius: 0.5em;
-    padding: 0.5em 1.5em;
+.sign-info button {
+  color: hsl(50, 96%, 48%);
+  border: 2px solid hsl(50, 96%, 48%);
+  border-radius: 0.5em;
+  padding: 0.5em 1.5em;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 2em;
 }
